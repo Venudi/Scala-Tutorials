@@ -1,0 +1,26 @@
+2022.07.12 08:48:59 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute02\.metals\lsp.trace.json or C:\Users\dell\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.07.12 08:49:06 INFO  logging to file C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute02\.metals\metals.log
+2022.07.12 08:49:06 INFO  Started: Metals version 0.11.7 in workspace 'C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute02' for client Visual Studio Code 1.69.0.
+2022.07.12 08:49:09 INFO  time: initialize in 2.73s
+2022.07.12 08:49:10 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.07.12 08:49:10 WARN  Build server is not auto-connectable.
+2022.07.12 08:49:10 WARN  no build tool detected in workspace 'C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute02'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.07.12 08:49:12 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute02\1.scala
+2022.07.12 08:49:37 INFO  no build target found for C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute02\1.scala. Using presentation compiler with project's scala-library version: 3.1.3
+2022.07.12 08:49:44 INFO  time: code lens generation in 31s
+2022.07.12 08:49:44 INFO  time: code lens generation in 31s
+Jul 12, 2022 8:51:09 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.07.12 09:28:09 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute02\2.scala
+Jul 12, 2022 9:28:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 36
+2022.07.12 17:16:25 INFO  time: code lens generation in 2.5s
+2022.07.12 17:16:25 INFO  time: code lens generation in 1.15s
+2022.07.12 17:16:25 INFO  time: code lens generation in 2.52s
+2022.07.12 17:44:09 INFO  time: code lens generation in 1.12s
+Jul 12, 2022 7:43:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 65
+Jul 12, 2022 7:43:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 66
+Jul 12, 2022 7:43:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 67
