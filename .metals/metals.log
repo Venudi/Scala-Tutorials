@@ -1021,3 +1021,227 @@ INFO: Unsupported notification method: $/setTrace
 2022.07.10 11:18:17 INFO  shutting down Metals
 2022.07.12 19:45:55 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\.metals\lsp.trace.json or C:\Users\dell\AppData\Local\scalameta\metals\cache\lsp.trace.json
 2022.07.12 19:45:58 INFO  logging to file C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\.metals\metals.log
+2022.07.12 19:45:58 INFO  Started: Metals version 0.11.7 in workspace 'C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials' for client Visual Studio Code 1.69.0.
+2022.07.12 19:46:01 INFO  time: initialize in 3.07s
+2022.07.12 19:46:01 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.07.12 19:46:03 WARN  Build server is not auto-connectable.
+2022.07.12 19:46:03 WARN  no build tool detected in workspace 'C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.07.12 19:46:04 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 19:46:14 INFO  no build target found for C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala. Using presentation compiler with project's scala-library version: 3.1.3
+2022.07.12 19:46:19 INFO  time: code lens generation in 12s
+Jul 12, 2022 7:47:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+Jul 12, 2022 7:47:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Jul 12, 2022 7:47:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+2022.07.12 19:52:43 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 19:52:59 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 19:53:31 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 19:54:03 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute02\1.scala
+Jul 12, 2022 7:54:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 5 is not a valid line number, allowed [0..4]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	... 15 more
+
+2022.07.12 19:54:29 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 19:54:59 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 19:55:11 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 19:57:57 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 19:58:13 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 19:58:30 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 7:58:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 557
+2022.07.12 19:59:44 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:00:12 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:00:49 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:01:00 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:01:11 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:02:59 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:08:55 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:09:18 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:09:56 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:10:05 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:16:15 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:16:50 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:18:00 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:18:26 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 8:18:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1540
+2022.07.12 20:20:54 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:21:16 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:22:01 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:22:46 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:22:49 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:23:19 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:24:04 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:26:29 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:26:45 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:27:00 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 8:28:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jul 12, 2022 8:28:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jul 12, 2022 8:28:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jul 12, 2022 8:28:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.07.12 20:28:54 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 8:30:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3000
+2022.07.12 20:32:44 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:35:00 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:38:04 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:39:00 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:39:19 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:39:30 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:40:33 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 8:40:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jul 12, 2022 8:40:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.07.12 20:40:44 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 8:47:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4187
+2022.07.12 20:47:18 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:47:45 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 20:47:59 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 8:48:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4369
+Exception in thread "pool-3-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:196)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.07.12 21:48:28 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:49:17 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:50:52 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:50:54 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 9:50:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5155
+2022.07.12 21:50:55 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:50:56 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:50:59 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 9:54:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.07.12 21:55:34 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:55:49 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:56:05 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:56:54 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:57:37 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:57:53 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 21:58:25 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:00:23 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:02:08 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:02:46 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Exception in thread "pool-3-thread-2" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:196)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.07.12 22:03:10 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:03:36 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:09:50 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:10:00 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:10:00 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:10:10 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:10:22 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:15:21 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:16:19 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:16:39 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 10:17:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7579
+Exception in thread "pool-3-thread-3" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:196)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.07.12 22:21:48 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:22:43 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:24:17 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:24:30 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:24:53 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:25:02 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:27:29 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:28:48 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Exception in thread "pool-3-thread-4" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:196)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.07.12 22:29:03 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:29:40 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:30:21 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:32:31 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:34:30 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:34:34 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:35:15 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:37:02 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:37:29 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:38:02 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+Jul 12, 2022 10:39:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10314
+Jul 12, 2022 10:39:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10391
+2022.07.12 22:40:11 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:41:52 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:42:19 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:42:32 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:42:44 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:43:04 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
+2022.07.12 22:43:34 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
