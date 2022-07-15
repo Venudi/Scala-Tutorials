@@ -1,0 +1,192 @@
+2022.07.15 13:07:57 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\.metals\lsp.trace.json or C:\Users\dell\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.07.15 13:08:02 INFO  logging to file D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\.metals\metals.log
+2022.07.15 13:08:02 INFO  Started: Metals version 0.11.7 in workspace 'D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03' for client Visual Studio Code 1.69.1.
+2022.07.15 13:08:04 INFO  time: initialize in 1.81s
+2022.07.15 13:08:04 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.07.15 13:08:05 WARN  Build server is not auto-connectable.
+2022.07.15 13:08:05 WARN  no build tool detected in workspace 'D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.07.15 13:08:22 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:08:26 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03'.scala
+2022.07.15 13:08:34 INFO  no build target found for D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala. Using presentation compiler with project's scala-library version: 3.1.3
+2022.07.15 13:08:41 INFO  time: code lens generation in 14s
+2022.07.15 13:08:41 INFO  time: code lens generation in 13s
+2022.07.15 13:08:41 INFO  time: code lens generation in 13s
+2022.07.15 13:08:41 INFO  time: code lens generation in 14s
+2022.07.15 13:08:41 INFO  time: code lens generation in 17s
+2022.07.15 13:08:41 INFO  time: code lens generation in 17s
+2022.07.15 13:08:41 INFO  time: code lens generation in 18s
+2022.07.15 13:08:41 INFO  time: code lens generation in 18s
+Jul 15, 2022 1:08:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+Jul 15, 2022 1:08:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 161 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	... 16 more
+
+Jul 15, 2022 1:08:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+Jul 15, 2022 1:08:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	... 16 more
+
+Jul 15, 2022 1:08:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24
+Jul 15, 2022 1:08:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+2022.07.15 13:08:41 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:08:41 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+Jul 15, 2022 1:08:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30
+Jul 15, 2022 1:10:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 187
+2022.07.15 13:10:24 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:10:32 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:11:04 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+Exception in thread "pool-3-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:196)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.07.15 13:11:04 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:12:06 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+Exception in thread "pool-3-thread-2" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:196)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.07.15 13:13:10 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+Exception in thread "pool-3-thread-3" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:196)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.07.15 13:13:10 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:13:19 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+Jul 15, 2022 1:14:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 521
+2022.07.15 13:15:55 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:16:16 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+Jul 15, 2022 1:17:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 951
+2022.07.15 13:22:26 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:23:47 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+Jul 15, 2022 1:24:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1214
+2022.07.15 13:24:18 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:24:26 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:24:40 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:28:46 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:28:50 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+Jul 15, 2022 1:29:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1417
+2022.07.15 13:29:22 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:30:18 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+Jul 15, 2022 1:31:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1506
+2022.07.15 13:31:21 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:31:28 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 13:31:30 INFO  shutting down Metals
+2022.07.15 16:11:55 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\.metals\lsp.trace.json or C:\Users\dell\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.07.15 16:12:00 INFO  logging to file D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\.metals\metals.log
+2022.07.15 16:12:00 INFO  Started: Metals version 0.11.7 in workspace 'D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03' for client Visual Studio Code 1.69.1.
+2022.07.15 16:12:03 INFO  time: initialize in 2.83s
+2022.07.15 16:12:03 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.07.15 16:12:04 WARN  Build server is not auto-connectable.
+2022.07.15 16:12:04 WARN  no build tool detected in workspace 'D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.07.15 16:12:05 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 16:12:13 INFO  no build target found for D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala. Using presentation compiler with project's scala-library version: 3.1.3
+Jul 15, 2022 4:12:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+2022.07.15 16:12:14 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.15 16:12:17 INFO  time: code lens generation in 11s
+2022.07.15 16:12:17 INFO  time: code lens generation in 3.29s
+2022.07.15 16:12:17 INFO  time: code lens generation in 3.39s
+2022.07.15 16:12:31 WARN  no build target for: D:\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala

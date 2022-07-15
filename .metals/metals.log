@@ -1245,3 +1245,4 @@ WARNING: Unmatched cancel notification for request id 10391
 2022.07.12 22:42:44 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
 2022.07.12 22:43:04 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\1.scala
 2022.07.12 22:43:34 WARN  no build target for: C:\Users\dell\Documents\UCSC\Year 2\SCS2204 Functional Programming\Tutorials\tute03\tute03.scala
+2022.07.12 23:19:31 INFO  shutting down Metals
