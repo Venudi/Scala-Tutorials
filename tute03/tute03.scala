@@ -1,5 +1,4 @@
-import scala.compiletime.ops.float
-object tute01{
+object tute03{
     def main(args: Array[String]) = {
 
 // Question 01
@@ -26,7 +25,7 @@ object tute01{
         
         def bookcost (n:Int, discount:Double) = n*24.95*(1-discount)
         def shipping (n:Int) : Double = n<=50 match{
-            case true => n83
+            case true => n*3
             case _ => 50*3 + (n-50)*0.75
         }
         def wholesalecost (n:Int) : Double = bookcost(n, 0.4) + shipping(n)
