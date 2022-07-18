@@ -11,8 +11,8 @@ object tute03{
 // Question 02
         println("\n\nQuestion 02")
 
-        def converttemp (temp:Float) = temp*9/5 + 32
-        println("0 celcius to F: " + converttemp(35) + "F")
+        def converttemp (temp:Float) = temp*9.0/5.0 + 32
+        println("35 celcius to F: " + converttemp(35) + "F")
         
 // Question 03
         println("\n\nQuestion 03")
